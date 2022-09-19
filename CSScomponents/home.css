@@ -2,7 +2,7 @@
     font-family: 'Nunito', sans-serif;
     padding: 20px;
     width: 100%;
-    height: calc(100vh + 80px);
+    height: 100vh;
     display: flex;
     justify-content: space-around;
     align-items: center;

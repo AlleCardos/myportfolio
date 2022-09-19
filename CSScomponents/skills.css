@@ -1,0 +1,69 @@
+.skills-container{
+    font-family: 'Nunito', sans-serif;
+    padding: 20px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px 0;
+}
+
+.skills-container .skill-container__bar{
+    width: 60%;
+}
+
+.skills-container .skill-container__bar--info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 3px;
+}
+
+.skills-container .skill-container__bar--info span{
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 18px;
+}
+
+.skills-container .skills__bars{
+    background-color: lightgray;
+    width: 100%;
+    height: 6px;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: #000 0px 1px 2px;
+}
+
+.skills-container .skills__bars::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    background-color: #000;
+    border-radius: 10px;
+}
+
+.skills-container .logic:before{
+    width: 75%;
+}
+
+.skills-container .html:before{
+    width: 60%;
+}
+
+.skills-container .css:before{
+    width: 65%;
+}
+
+.skills-container .javascript:before{
+    width: 45%;
+}
+
+.skills-container .php:before{
+    width: 30%;
+}
+
+.skills-container .mysql:before{
+    width: 65%;
+}
