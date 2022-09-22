@@ -156,70 +156,41 @@
     font-family: var(--font);
     padding: 20px;
     width: 100%;
-    height: 100vh;
+    height: calc(100vh + 60px);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 20px 0;
 }
 
-.skills-container .skill-container__bar{
-    width: 60%;
-}
-
-.skills-container .skill-container__bar--info{
+.cards-container{
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 6px 3px;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0px 15px;
 }
 
-.skills-container .skill-container__bar--info span{
-    font-weight: 700;
-    letter-spacing: 1px;
-    font-size: 18px;
+.skills-container .card-skill{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 250px;
+    height: 250px;
+    padding: 20px;
 }
 
-.skills-container .skills__bars{
-    background-color: lightgray;
-    width: 100%;
-    height: 6px;
-    border-radius: 10px;
-    position: relative;
-    box-shadow: #000 0px 1px 2px;
+.skills-container .card-skill i{
+    font-size: 3rem;
+    margin-bottom: 5px;
 }
 
-.skills-container .skills__bars::before{
-    content: '';
-    position: absolute;
-    height: 100%;
-    background-color: #000;
-    border-radius: 10px;
-}
-
-.skills-container .logic:before{
-    width: 75%;
-}
-
-.skills-container .html:before{
-    width: 60%;
-}
-
-.skills-container .css:before{
-    width: 65%;
-}
-
-.skills-container .javascript:before{
-    width: 45%;
-}
-
-.skills-container .php:before{
-    width: 30%;
-}
-
-.skills-container .mysql:before{
-    width: 65%;
+.skills-container .card-skill p{
+    font-size: 1rem;
+    text-align: center;
+    line-height: 25px;
+    letter-spacing: 0.5px;
+    font-weight: 600;
 }
 
 
@@ -233,7 +204,13 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    gap: 30px 0px;
+}
+
+.cards-projects{
+    display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 30px 60px;
 }
 
@@ -289,4 +266,5 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 40px;
 }
