@@ -295,6 +295,10 @@ html{
     align-items: center;
 }
 
+.card-header h2{
+    font-size: 20px;
+}
+
 .block a{
     pointer-events: none;
 }
