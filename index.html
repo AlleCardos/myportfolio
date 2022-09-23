@@ -12,23 +12,27 @@
 <body>
 
     <header class="header-container">
-        <a href="#" class="header-container__logo"><h1>&lt;A/&gt;</h1></a>
+        <div  class="header-container__logo">
+            <a href="./index.html">&lt;A/&gt;</a>
+        </div>
         <nav class="header-container__navbar">
             <ul>
                 <li><a href="#home">Ínicio</a></li>
                 <li><a href="#about">Sobre</a></li>
                 <li><a href="#skills">Habilidades</a></li>
                 <li><a href="#projects">Projetos</a></li>
-                <li><a href="#contact">Contato</a></li>
             </ul>
         </nav>
+        <div class="header-container__btn">
+            <ion-icon class="menu-btn" name="menu-outline"></ion-icon>
+        </div>
     </header>
 
     <section class="home-container" id="home">
         <div class="home-container__description">
             <h2>Olá! Meu nome é</h2>
             <h3>Allexandre C. Pereira</h3>
-            <p>Foco: Back-End</p>
+            <p>Desenvolvedor Júnior</p>
         </div>
         <div class="home-container__img">
             <img src="./imgs/home-img.svg" alt="Home-Image">
@@ -36,34 +40,40 @@
     </section>
 
     <section class="about-container" id="about">
-        <div class="about-container__img">
-            <img src="./imgs/about-img.png" alt="">
+
+        <div class="container-title">
+            <h1>Sobre Mim</h1>
         </div>
-        <div class="about-container__description">
-            <p>
-                Finalizando curso Técnico em Desenvolvimento de Sistemas. Tive contato com tecnlogia muito cedo e em 2020 tive a portunidade de conhecer o mundo de desenvolvimento. Desde então, tenho me aperfeiçoado na área buscando conquistar meu espaço como profissional. Atualmente estou estudando para ingressar na faculdade e criando projetos pessoais para ganhar experiência com as tecnologias utilizadas no mercado. Aprecio uma conversa e busco sempre uma melhora pessoal. 
-            </p>
-            <div class="about-container_description--links">
-                <a href="https://www.linkedin.com/in/allexandre-cardoso-pereira/" target="_blank">
-                    <ion-icon name="logo-linkedin"></ion-icon>
-                    <span>Linkedin</span>
-                </a>
-                <a href="https://www.linkedin.com/in/allexandre-cardoso-pereira/" download>
-                    <ion-icon name="caret-down-outline"></ion-icon>
-                    <span>Currículo</span>
-                </a>
+
+        <div class="container-main">
+            <div class="about-container__img">
+                <img src="./imgs/about-img.png" alt="">
+            </div>
+            <div class="about-container__description">
+                <p>
+                    Finalizando curso Técnico em Desenvolvimento de Sistemas. Tive contato com tecnlogia muito cedo e em 2020 tive a portunidade de conhecer o mundo de desenvolvimento. Desde então, tenho me aperfeiçoado na área buscando conquistar meu espaço como profissional. Atualmente estou estudando para ingressar na faculdade e criando projetos pessoais para ganhar experiência com as tecnologias utilizadas no mercado. Aprecio uma conversa e busco sempre uma melhora pessoal. 
+                </p>
+                <div class="about-container_description--links">
+                    <a href="https://www.linkedin.com/in/allexandre-cardoso-pereira/" target="_blank">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                        <span>Linkedin</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/allexandre-cardoso-pereira/" download>
+                        <ion-icon name="caret-down-outline"></ion-icon>
+                        <span>Currículo</span>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
 
     <section class="skills-container" id="skills">
 
-        <div class="title-section">
+        <div class="container-title">
             <h1>Habilidades</h1>
         </div>
 
-        <div class="cards-container">
-
+        <div class="container-main">
             <div class="card-skill">
                 <i class="devicon-html5-plain colored"></i>
                 <p>Tenho contato com a linguagem de hipertexto desde 2020 a maioria dos meus projetos possuem HTML.</p>
@@ -101,23 +111,20 @@
 
     <section class="project-container" id="projects">
 
-        <div>
+        <div class="container-title">
             <h1>Projetos</h1>
         </div>
         
-        <div class="cards-projects">
+        <div class="container-main">
+
             <div class="card-project">
-                <div class="card header">
-                    <div>
+                <div class="card-header">
                         <h3>Teste</h3>
-                    </div>
                 </div>
-                <div class="card description">
-                    <div>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis adipisci unde nulla inventore beatae earum tenetur officiis, voluptatibus modi, magni ullam commodi error reiciendis expedita. Numquam ad dolorum facilis quis!</p>
-                    </div>
+                <div class="card-description">
+                        <p>Cardápio virtual simples utilizando <mark class="mark html">HTML</mark>, <mark class="mark css">CSS</mark> e <mark class="mark javascript">Javascript</mark>.</p>
                 </div>
-                <div class="card links">
+                <div class="card-links">
                     <a href="">
                         <ion-icon name="link-outline"></ion-icon>
                         <span>Visit</span>
@@ -128,19 +135,15 @@
                     </a>
                 </div>
             </div>
-    
-            <div class="card-project">
-                <div class="card header">
-                    <div>
-                        <h3>Teste</h3>
-                    </div>
+
+            <div class="card-project block">
+                <div class="card-header">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
                 </div>
-                <div class="card description">
-                    <div>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis adipisci unde nulla inventore beatae earum tenetur officiis, voluptatibus modi, magni ullam commodi error reiciendis expedita. Numquam ad dolorum facilis quis!</p>
-                    </div>
+                <div class="card-description">
+                        <p>Em breve...</p>
                 </div>
-                <div class="card links">
+                <div class="card-links">
                     <a href="">
                         <ion-icon name="link-outline"></ion-icon>
                         <span>Visit</span>
@@ -151,19 +154,15 @@
                     </a>
                 </div>
             </div>
-    
-            <div class="card-project">
-                <div class="card header">
-                    <div>
-                        <h3>Teste</h3>
-                    </div>
+
+            <div class="card-project block">
+                <div class="card-header">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
                 </div>
-                <div class="card description">
-                    <div>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis adipisci unde nulla inventore beatae earum tenetur officiis, voluptatibus modi, magni ullam commodi error reiciendis expedita. Numquam ad dolorum facilis quis!</p>
-                    </div>
+                <div class="card-description">
+                        <p>Em breve...</p>
                 </div>
-                <div class="card links">
+                <div class="card-links">
                     <a href="">
                         <ion-icon name="link-outline"></ion-icon>
                         <span>Visit</span>
@@ -174,7 +173,25 @@
                     </a>
                 </div>
             </div>
-            
+
+            <div class="card-project block">
+                <div class="card-header">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                </div>
+                <div class="card-description">
+                        <p>Em breve...</p>
+                </div>
+                <div class="card-links">
+                    <a href="">
+                        <ion-icon name="link-outline"></ion-icon>
+                        <span>Visit</span>
+                    </a>
+                    <a href="">
+                        <ion-icon name="code-slash-outline"></ion-icon>
+                        <span>Code</span>
+                    </a>
+                </div>
+            </div>
 
         </div>
     </section>
@@ -182,7 +199,6 @@
     <footer class="footer">
         <p>by Allexandre Cardoso Pereira &copy;</p>
     </footer>
-    
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
