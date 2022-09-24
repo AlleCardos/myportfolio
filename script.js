@@ -22,11 +22,12 @@ btn.addEventListener('click', () =>{
 
 })
 
-//Menu close link
+//Menu close by link
 let links = document.querySelectorAll('.header-container__navbar ul li a')
 
 links.forEach(item => 
     item.addEventListener('click', () => {
         menu.classList.remove('active');
+        btn.classList.remove('show');
     })
 )
