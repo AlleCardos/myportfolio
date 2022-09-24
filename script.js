@@ -15,8 +15,10 @@ btn.addEventListener('click', () =>{
 
     if(menu.classList.contains('active')){
         menu.classList.remove('active');
+        btn.classList.remove('show');
     }else{
         menu.classList.add('active');
+        btn.classList.add('show');
     }
 
 })

@@ -18,9 +18,7 @@ html{
 }
 
 :root{
-
     --font: 'Nunito', sans-serif;
-
 }
 
 .mark{
@@ -59,7 +57,6 @@ html{
 
 .header-container__logo a{
     letter-spacing: 2px;
-    color: #000;
     font-size: 32px;
     font-weight: 700;
     transition: all 0.5s ease;
@@ -76,24 +73,40 @@ html{
 
 .header-container__navbar ul li a{
     letter-spacing: 2px;
-    color: #000;
     font-weight: 700;
     transition: all 0.5s ease;
 }
 
-.header-container__navbar ul li a:hover{
-    color: #CF4C06;
+.header-container__navbar ul li a:hover,
+.header-container__logo a:hover{
+    color: #B30E2F;
 }
 
 .header-container__btn{
     display: none;
     z-index: 9999;
+}
+
+.header-container__btn .menu-btn{
     font-size: 32px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.show{
+    color: #fff !important;
+}
+
+.header-container__logo a,
+.header-container__navbar ul li a,
+.header-container__btn .menu-btn{
+    color: #fff;
 }
 
 .sticky{
-    background-color: rgba(0, 0, 0, 0.95);
+    background-color: #B30E2F;
     height: 60px;
+    box-shadow: #000 0px 2px 4px;
 }
 
 .sticky .header-container__logo a{
@@ -101,12 +114,9 @@ html{
 }
 
 .sticky .header-container__logo a,
-.sticky .header-container__navbar ul li a{
-    color: #fff;
-}
-
-.sticky .header-container__btn{
-    color: #fff;
+.sticky .header-container__navbar ul li a,
+.sticky .header-container__btn .menu-btn{
+    color: #000;
 }
 
 /* Home Style */
@@ -117,13 +127,16 @@ html{
     width: 100%;
     height: 100vh;
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    background: url(./imgs/home-bg.jpg);
+    background-size: cover;
 }
 
 .home-container__description{
     width: 500px;
     padding: 10px;
+    color: #fff;
+    margin-left: 150px;
 }
 
 .home-container__description h2{
@@ -137,14 +150,9 @@ html{
 }
 
 .home-container__description p{
-    font-size: 2rem;
+    font-size: 32px;
     font-weight: 800;
-}
-
-.home-container__img img{
-    display: block;
-    height: 350px;
-    width: auto;
+    color: #B30E2F;
 }
 
 /* About Style */
@@ -373,7 +381,7 @@ html{
         gap: 0px 40px; 
         width: 100%;
         height: 100vh;
-        background-color: rgba(0, 0, 0, 0.95);
+        background-color: rgba(0, 0, 0, 0.98);
         left: -100%;
         top: 0%;
         text-align: center;
@@ -395,15 +403,12 @@ html{
         padding: 25px;
     }
 
-    .home-container__img img{
-        display: none;
-    }
-
     .home-container{
         justify-content: center;
     }
 
     .home-container__description{
+        margin-left: 0;
         text-align: center;
     }
     
