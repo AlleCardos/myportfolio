@@ -8,10 +8,9 @@ window.addEventListener('scroll', () =>{
 
 //Menu event
 let btn = document.querySelector('.menu-btn')
+let menu = document.querySelector('.header-container__navbar ul')
 
 btn.addEventListener('click', () =>{
-
-    let menu = document.querySelector('.header-container__navbar ul')
 
     if(menu.classList.contains('active')){
         menu.classList.remove('active');
@@ -22,3 +21,12 @@ btn.addEventListener('click', () =>{
     }
 
 })
+
+//Menu close link
+let links = document.querySelectorAll('.header-container__navbar ul li a')
+
+links.forEach(item => 
+    item.addEventListener('click', () => {
+        menu.classList.remove('active');
+    })
+)
