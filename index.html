@@ -5,12 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-    <link rel="stylesheet" href="./style.css" type="text/css">
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
     <link rel="shortcut icon" href="./favicon.ico?" type="image/x-icon">
-    <script defer src="./script.js" type="text/javascript"></script>
+    <script defer src="./scripts/script.js" type="text/javascript"></script>
     <title>Portfólio</title>
 </head>
 <body>
+
+    <!------------ 
+    === HEADER === 
+    ------------->
 
     <header class="header-container">
         <div  class="header-container__logo">
@@ -29,6 +33,10 @@
         </div>
     </header>
 
+    <!------------ 
+    === HOME SECTION === 
+    ------------->
+
     <section class="home-container" id="home">
         <div class="home-container__description">
             <h2>Olá! Meu nome é</h2>
@@ -36,6 +44,10 @@
             <p>Desenvolvedor Júnior</p>
         </div>
     </section>
+
+    <!------------ 
+    === ABOUT SECTION === 
+    ------------->
 
     <section class="about-container" id="about">
 
@@ -45,7 +57,7 @@
 
         <div class="container-main">
             <div class="about-container__img">
-                <img src="./imgs/about-img.png" alt="">
+                <img src="./imgs/img-sections/about-img.png" alt="">
             </div>
             <div class="about-container__description">
                 <p>
@@ -64,6 +76,10 @@
             </div>
         </div>
     </section>
+
+    <!------------ 
+    === SKILLS SECTION === 
+    ------------->
 
     <section class="skills-container" id="skills">
 
@@ -107,6 +123,10 @@
 
     </section>
 
+    <!------------ 
+    === PROJECT SECTION === 
+    ------------->
+
     <section class="project-container" id="projects">
 
         <div class="container-title">
@@ -115,84 +135,54 @@
         
         <div class="container-main">
 
-            <div class="card-project">
+            <div class="card-project tag-update">
                 <div class="card-header">
-                    <h2>Ham-Ham-Burguer</h2>
+                    <img src="./imgs/headers-projects/ham-ham-burguer.svg" alt="ham-ham-burguer">
                 </div>
-                <div class="card-description">
+                <div class="card-inner">
+                    <div class="card-description">
                         <p>Cardápio virtual simples utilizando <mark class="mark html">HTML</mark>, <mark class="mark css">CSS</mark> e <mark class="mark javascript">Javascript</mark>.</p>
-                </div>
-                <div class="card-links">
-                    <a href="https://allecardos.github.io/ham-ham-burguer/" target="_blank">
-                        <ion-icon name="link-outline"></ion-icon>
-                        <span>Visit</span>
-                    </a>
-                    <a href="https://github.com/AlleCardos/ham-ham-burguer" target="_blank">
-                        <ion-icon name="code-slash-outline"></ion-icon>
-                        <span>Code</span>
-                    </a>
-                </div>
-            </div>
-
-            <div class="card-project block">
-                <div class="card-header">
-                        <ion-icon name="lock-closed-outline"></ion-icon>
-                </div>
-                <div class="card-description">
-                        <p>Em breve...</p>
-                </div>
-                <div class="card-links">
-                    <a href="">
-                        <ion-icon name="link-outline"></ion-icon>
-                        <span>Visit</span>
-                    </a>
-                    <a href="">
-                        <ion-icon name="code-slash-outline"></ion-icon>
-                        <span>Code</span>
-                    </a>
+                    </div>
+                    <div class="card-links">
+                        <a href="https://allecardos.github.io/ham-ham-burguer/" target="_blank">
+                            <ion-icon name="link-outline"></ion-icon>
+                            <span>Visit</span>
+                        </a>
+                        <a href="https://github.com/AlleCardos/ham-ham-burguer" target="_blank">
+                            <ion-icon name="code-slash-outline"></ion-icon>
+                            <span>Code</span>
+                        </a>
+                    </div>
                 </div>
             </div>
 
-            <div class="card-project block">
-                <div class="card-header">
-                        <ion-icon name="lock-closed-outline"></ion-icon>
+            <div class="card-project">
+                <div class="card-header tag-developing  ">
+                    <img src="./imgs/headers-projects/em-breve.svg" alt="em-breve">
                 </div>
-                <div class="card-description">
-                        <p>Em breve...</p>
-                </div>
-                <div class="card-links">
-                    <a href="">
-                        <ion-icon name="link-outline"></ion-icon>
-                        <span>Visit</span>
-                    </a>
-                    <a href="">
-                        <ion-icon name="code-slash-outline"></ion-icon>
-                        <span>Code</span>
-                    </a>
-                </div>
-            </div>
-
-            <div class="card-project block">
-                <div class="card-header">
-                        <ion-icon name="lock-closed-outline"></ion-icon>
-                </div>
-                <div class="card-description">
-                        <p>Em breve...</p>
-                </div>
-                <div class="card-links">
-                    <a href="">
-                        <ion-icon name="link-outline"></ion-icon>
-                        <span>Visit</span>
-                    </a>
-                    <a href="">
-                        <ion-icon name="code-slash-outline"></ion-icon>
-                        <span>Code</span>
-                    </a>
+                <div class="card-inner block">
+                    <div class="card-description">
+                        <p>Cardápio virtual simples utilizando <mark class="mark html">HTML</mark>, <mark class="mark css">CSS</mark> e <mark class="mark javascript">Javascript</mark>.</p>
+                    </div>
+                    <div class="card-links">
+                        <a href="https://allecardos.github.io/ham-ham-burguer/" target="_blank">
+                            <ion-icon name="link-outline"></ion-icon>
+                            <span>Visit</span>
+                        </a>
+                        <a href="https://github.com/AlleCardos/ham-ham-burguer" target="_blank">
+                            <ion-icon name="code-slash-outline"></ion-icon>
+                            <span>Code</span>
+                        </a>
+                    </div>
                 </div>
             </div>
 
         </div>
     </section>
+
+    <!------------ 
+    === FOOTER === 
+    ------------->
 
     <footer class="footer">
         <p>by Allexandre Cardoso Pereira &copy;</p>
