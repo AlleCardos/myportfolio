@@ -3,10 +3,11 @@
 ## 📝 About
 
 My person portfolio, where I post my academic and person projects, always trying keep it updated. You can find out a litte about me.
+
 ##
 
 <div align="center">
-    <a href="https://allecardos.github.io/eletrobest/" target="_blank">Acess Portfolio</a>
+    <a href="https://allecardos.github.io/myportfolio/" target="_blank">Acess Portfolio</a>
 </div>
 
 ##
