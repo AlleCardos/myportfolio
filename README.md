@@ -2,10 +2,7 @@
 
 ## 📝 About
 
-##
-
 My person portfolio, where I post my academic and person projects, always trying keep it updated. You can find out a litte about me.
-
 ##
 
 <div align="center">
