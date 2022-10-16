@@ -15,7 +15,37 @@ html{
 }
 
 .container-title{
+    letter-spacing: 2px;
+    font-size: 18px;
+    position: relative;
     margin-bottom: 50px;
+}
+
+.container-title h1{
+    font-weight: 900;
+}
+
+.container-title h1::before{
+    content: '';
+    display: inline-block;
+    width: 120px;
+    height: 5px;
+    background-color: #B30E2F;
+    position: absolute;
+    top: -5px;
+    left: -20px;
+    box-shadow: #000 0px 2px 4px;
+}
+.container-title h1::after{
+    content: '';
+    display: inline-block;
+    width: 110px;
+    height: 5px;
+    background-color: #B30E2F;
+    position: absolute;
+    bottom: -5px;
+    right: -20px;
+    box-shadow: #000 0px 2px 4px;
 }
 
 :root{
@@ -377,7 +407,6 @@ html{
     align-items: center;
     justify-content: center;
 }
-
 
 /* Responsive */
 
