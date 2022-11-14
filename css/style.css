@@ -179,7 +179,7 @@ html{
     font-weight: 600;
 }
 
-.home-container__description p{
+.home-container__description span{
     font-size: 32px;
     font-weight: 800;
     color: #B30E2F;
@@ -189,39 +189,32 @@ html{
 
 .about-container{
     width: 100%;
-    padding: 100px 20px;
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     font-family: var(--font);
+    background: url(../imgs/bg-sections/about-bg.jpg);
+    background-size: cover;
 }
 
 .about-container .container-main{
-    width: 100%;
+    width: 80%;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: flex-end;
     flex-wrap: wrap;
-}
-
-.about-container__img img{
-    display: block;
-    width: auto;
-    height: 320px;
-    padding: 15px;
 }
 
 .about-container__description p{
     max-width: 600px;
     text-align: justify;
-    font-size: 18px;
+    font-size: 19px;
     font-weight: 600;
     line-height: 30px;
     margin-bottom: 20px;
     text-indent: 32px;
     margin-bottom: 45px;
-    padding: 15px;
 }
 
 .about-container_description--links{
@@ -242,14 +235,16 @@ html{
     padding: 10px;
     border-radius: 10px;
     gap: 0 10px;
-    color: #000;
+    color: #fff;
     font-size: 20px;
-    transition: all 0.5s ease;
+    transition: all 0.5s;
+    background-color: #0C0B0A;
 }
 
 .about-container__description a:hover{
-    background-color: #000;
-    color: #fff;
+    background-color: #B30E2F;
+    color: #000;
+    transform: translateY(-10px);
 }
 
 .about-container__description span{
@@ -309,6 +304,11 @@ html{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-color: #0C0B0A;
+}
+
+.project-container h1{
+    color: #fff;
 }
 
 .project-container .container-main{
@@ -412,6 +412,13 @@ html{
 
 /* Responsive */
 
+@media (max-width: 1055px) {
+
+    .about-container{
+        background: url(../imgs/bg-sections/about-bg-mobile.jpg);
+    }
+}
+
 @media(max-width: 943px) {
 
     .header-container__btn{
@@ -453,15 +460,9 @@ html{
         margin-left: 0;
         text-align: center;
     }
-    
-    .about-container__img img{
-        width: auto;
-        height: 300px;
-    }
 
     .project-container .card-project{
-        width: 300px;
-        height: 300px;
-    }
-    
+        width: 350px;
+        height: 350px;
+    } 
 }
