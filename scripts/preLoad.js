@@ -7,6 +7,3 @@ function preLoad(){
     preContent.style.display = "none";
 
 }
-
-
-
