@@ -278,12 +278,27 @@ html{
     justify-content: center;
     flex-direction: column;
     width: 280px;
+    height: 250px;
     padding: 5px;
+    transition: all 0.6s;
+    border-radius: 5px;
+}
+
+.skills-container .card-skill:hover{
+    box-shadow: #000 0px 0px 4px;
+    color: #fff;
+    background-color: #B30E2F;
+    transform: translateY(-10px);
 }
 
 .skills-container .card-skill i{
     font-size: 48px;
     margin-bottom: 12px;
+    transition: all 0.6s;
+}
+
+.skills-container .card-skill:hover i{
+    color: #fff;
 }
 
 .skills-container .card-skill p{
@@ -328,7 +343,7 @@ html{
 .project-container .card-project:hover .card-inner{
     height: 100%;
     opacity: 1;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.9);
 }
 
 .card-header{
@@ -369,7 +384,7 @@ html{
     letter-spacing: 2px;
     line-height: 30px;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .card-links{
